@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Element on Image Focus</title>
+    <style>
+        #element2 {
+            display: none;
+        }
+
+        #element1:focus + #element2 {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://via.placeholder.com/150" id="element1" tabindex="0" alt="Focus me to show element 2">
+    <div id="element2">This is element 2</div>
+</body>
+</html>
