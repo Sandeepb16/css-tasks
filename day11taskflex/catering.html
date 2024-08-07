@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 54px;
+            background-color: rgb(255, 255, 255);
+            position: fixed;
+            width: 100%;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.495);
+
+        }
+        .detail2{
+            margin-right: 36px;
+        }
+        .detail2 a:link,.detail1 a:link{
+            padding: 15px;
+            letter-spacing: 3px;
+            /* background-color: azure; */
+            text-decoration: none; 
+            color: black;
+        }
+        .detail2 a:visited,.detail1 a:visited{
+            color: black;
+        }
+        .detail2 a:hover,.detail1 a:hover{
+            background-color: rgb(162, 162, 162);
+            color: black;
+        }
+        .burgerimg{
+            background-image: url("hamburger.jpg");
+            background-size: cover;
+            height: 120vh;
+            width: 99vw;
+            letter-spacing: 6px;
+            display: flex;
+            align-items: flex-end;
+        }
+        .burgerimg h1{
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.568);
+        }
+        #about, #menu{
+            display: flex;
+            justify-content: center;
+            width: 98vw;
+            height:650px;
+            margin-top: 70px;
+            /* background-color: aqua; */
+
+        }
+        .adoutcont ,.aboutcont2{
+            width: 33%;
+            height: 96%;
+            /* background-color: rgb(0, 0, 0); */
+            /* border: 3px solid; */
+            margin-left: 25px;
+        }
+        .aboutcont2{
+            margin-top: 22px;
+        }
+        .adoutcont ,.cateringhead{
+            font-size: 2.5em;
+            letter-spacing: 4px;
+            text-align: center;
+            margin: 25px;
+        }
+        .adoutcont,.cateringdob{
+            font-size: larger;
+            text-align: center;
+            letter-spacing: 4px;
+        }
+        .para{
+            font-size: 1.2rem;
+            text-align: justify;
+            margin-top: 0px;
+        }
+        .para1{
+            font-size: 1.2rem;
+            text-align: justify;
+            color: rgba(0, 0, 0, 0.525);
+        }
+        .menuitem{
+            font-size: 1.3rem;
+            letter-spacing: 4px;
+        }
+        .menudata{
+            color: rgba(0, 0, 0, 0.501);
+        }
+        #contact{
+            width: 98vw;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .cdata{
+            width: 67%;
+            height: 100%;
+        }
+        .cdata input{
+            height: 50px;
+            width: 100%;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            margin-bottom: 10px;
+        }
+        .cdata .head{
+            font-size: 2.5rem;
+            letter-spacing: 4px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+    
+        <div class="detail1">
+            <a href="">Gourmel au Catering</a>  
+        </div>
+
+        <div class="detail2">
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+    <div class="burgerimg">
+        <div><h1>Le Catering</h1></div> 
+    </div>
+    <div class="allcontent">
+        <div id="about">
+            <div class="adoutcont">
+                <img src="tablesetting2.jpg" height="100%" width="100%">
+            </div>
+            <div class="aboutcont2">
+                <p class="cateringhead">About Catering</p><br>
+                <p class="cateringdob">Tradition since 1889</p><br>
+                <p class="para">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
+                     consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor 
+                      in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use seasonal ingredients.
+                </p><br>
+                <p class="para1">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div><br><br><br><br><hr>
+        <div id="menu" style="height: 870px;">
+            <div class="aboutcont2" style="height: 90%;">
+                <p class="cateringhead">Our Menu</p><br><br>
+                <p class="menuitem">Bread Basket</p>
+                <p class="menudata">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+                <p class="menuitem">Honey Almond Granola with Fruits</p>
+                <p class="menudata">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+                <p class="menuitem">Belgian Waffle</p>
+                <p class="menudata">Vanilla flavored batter with malted flour 7.50</p><br>
+                <p class="menuitem">Scrambled eggs</p>
+                <p class="menudata">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+                <p class="menuitem">Blueberry Pancakest</p>
+                <p class="menudata">With syrup, butter and lots of berries 8.50</p>
+            </div>
+            <div class="adoutcont" style="height: 94%;">
+                <img src="tablesetting.jpg" height="100%" width="100%">
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="cdata">
+                <p class="head">Contact</p>
+                <p style="line-height: 22px;">We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+                <p style="line-height: 22px;">Catering Service, 42nd Living St, 43043 New York, NY</p>
+                <p style="line-height: 22px;">You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+                <input type="text" placeholder="Name"><br>
+                <input type="number" placeholder="How Many Mumbers"><br>
+                <input type="datetime-local"><br>
+                <input type="text" placeholder="Message / Special Message"><br>
+                <button style="border: none; padding: 15px; margin-top: 15px;">SEND MESSAGE</button><br>
+            </div>
+        </div>
+        
+        
+        
+    </div><br>
+    <footer style="text-align: center; width: 99vw; height: 60px; background-color: rgba(230, 230, 230, 0.966); padding-top: 30px; margin-top: 125px;" >
+        <p>Power by Sandeep</p>
+    </footer>
+</body>
+</html>
