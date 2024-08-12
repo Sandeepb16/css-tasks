@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            padding-left: 150px;
+        }
+        .ch1,.ch2,.ch3,.ch4{
+            height: 50px;
+            width: 90px;
+            background-color: aquamarine;
+            color: rgba(0, 0, 0, 0.566);
+            padding: 20px;
+            margin-left: 50px;
+        }
+        .img1{
+            
+            transition-duration: 2s;
+            transition-delay: 2s;
+        }
+        .ch1:hover~.img1{
+            transform: translate(100px,100px);
+
+        
+        }
+        .ch2:hover~.img1{
+            transform: rotate(90deg);
+          
+        }
+        .ch3:hover~.img1{
+            transform: scale(1.5);
+        }
+        .ch4:hover~.img1{
+            transform: skew(40deg,20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+         <button class="ch1">translate</button>
+         <button class="ch2">Rotate</button>
+         <button class="ch3">Scale</button>
+         <button class="ch4">Skew</button><br><br><br>
+
+         <img src="forest.webp" alt="" class="img1" height="300px" width="400px" style="margin:150px 0px 0px 100px;">
+
+    </div>
+    
+</body>
+</html>
